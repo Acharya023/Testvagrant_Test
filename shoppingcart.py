@@ -13,7 +13,7 @@ def pay(ui,gs,q):
 	ans = 0
 	for i in range(len(ui)):
 		if(ui[i]>=500):
-			ans += ui[i]*q[i] + ui[i]*q[i]*gs[i]//100- ui[i]*q[i]*(5//100)
+			ans += ui[i]*q[i] + ui[i]*q[i]*gs[i]//100- ui[i]*q[i]*(5/100)
 		else:
 			ans += ui[i]*q[i] + ui[i]*q[i]*gs[i]//100 
 	return ans
